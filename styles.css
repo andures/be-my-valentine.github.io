@@ -1,123 +1,122 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
-    font-family: 'Poppins', sans-serif;
-    flex-direction: column;
-    margin: 0;
-    min-height: 100vh;
-    padding: 1rem;
-    box-sizing: border-box;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.container{
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    margin: 1rem;
-    padding: 1.5rem;
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem;
+  padding: 1.5rem;
 }
 
-h1{
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
-    margin-bottom: 1.5rem;
-    color: #ff4757;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: #ff4757;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.buttons{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.yes-btn{
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    padding: clamp(8px, 2vw, 12px) clamp(20px, 4vw, 30px);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #4cd137;
-    color: white;
-    white-space: nowrap;
+.yes-btn {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  padding: clamp(8px, 2vw, 12px) clamp(20px, 4vw, 30px);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #4cd137;
+  color: white;
+  white-space: nowrap;
 }
 
-.yes-btn:hover{
-    background-color: #44bd32;
-    transform: translateY(-2px);
+.yes-btn:hover {
+  background-color: #44bd32;
+  transform: translateY(-2px);
 }
 
-.no-btn{
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    padding: clamp(8px, 2vw, 12px) clamp(20px, 4vw, 30px);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #ff4757;
-    color: white;
-    white-space: nowrap;
+.no-btn {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  padding: clamp(8px, 2vw, 12px) clamp(20px, 4vw, 30px);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ff4757;
+  color: white;
+  white-space: nowrap;
 }
 
-.no-btn:hover{
-    background-color: #ff6b81;
-    transform: translateY(-2px);
+.no-btn:hover {
+  background-color: #ff6b81;
+  transform: translateY(-2px);
 }
 
-.image-container{
-    margin-top: 2rem;
-    width: 100%;
+.image-container {
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .image-container img {
-    max-width: min(200px, 80vw);
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: min(200px, 80vw);
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* autoria */
 
-.autoria{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    font-size: clamp(0.7rem, 2vw, 0.8rem);
-    color: #666;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 5px 10px;
-    border-radius: 20px;
-    z-index: 100;
+.autoria {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+  color: #666;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 20px;
+  z-index: 100;
 }
 
 /* Media Queries */
 @media (max-width: 480px) {
-    .container {
-        margin: 0.5rem;
-        padding: 1rem;
-    }
+  .container {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
 
-    .buttons {
-        gap: 10px;
-    }
+  .buttons {
+    gap: 10px;
+  }
 
-    .yes-btn, .no-btn {
-        width: 100%;
-        margin: 5px 0;
-    }
+  .yes-btn,
+  .no-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
-
-
