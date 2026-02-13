@@ -1,40 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¡Dijiste que sí! ❤️</title>
-    <link rel="stylesheet" href="./yes.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./yes.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="hearts" id="hearts"></div>
     <div class="container">
-        <h1>¡Sabía que dirías que sí! 💖</h1>
-        <div class="gif-container">
-            <img src="https://i.pinimg.com/originals/98/68/f5/9868f557c0c3049734ea8164d38b67c9.gif" alt="gif">
-        </div>
-    </div>
-    <!-- autoria -->
-    <div class="autoria">
-        <p>Hecho por <a href="https://github.com/Isnotcristhianr">Isnotcristhianr</a></p>
+      <h1>¡Sabía que dirías que sí! 💖</h1>
+      <div class="gif-container">
+        <img
+          src="https://i.pinimg.com/originals/98/68/f5/9868f557c0c3049734ea8164d38b67c9.gif"
+          alt="gif"
+        />
+      </div>
     </div>
     <script>
-        // Crear corazones cayendo
-        function createHeart() {
-            const heart = document.createElement('div');
-            heart.className = 'heart';
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
-            document.getElementById('hearts').appendChild(heart);
-            
-            setTimeout(() => {
-                heart.remove();
-            }, 5000);
-        }
+      // Crear corazones cayendo
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.getElementById("hearts").appendChild(heart);
 
-        // Crear corazones cada 300ms
-        setInterval(createHeart, 300);
+        setTimeout(() => {
+          heart.remove();
+        }, 5000);
+      }
+
+      // Crear corazones cada 300ms
+      setInterval(createHeart, 300);
     </script>
-</body>
+  </body>
 </html>
